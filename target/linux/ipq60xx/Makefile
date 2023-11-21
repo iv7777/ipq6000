@@ -14,10 +14,22 @@ KERNELNAME:=Image dtbs
 
 include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \
-	kmod-leds-gpio kmod-gpio-button-hotplug swconfig \
-	nss-firmware-ipq6018 kmod-qca-nss-dp kmod-qca-nss-ecm \
-	kmod-qca-ssdk qca-ssdk-shell kmod-qca-nss-drv \
-	kmod-qca-nss-drv-pppoe kmod-qca-nss-drv-bridge-mgr \
-	autocore-arm luci-app-cpufreq uboot-envtools
+	ath11k-firmware-ipq6018 \
+	kmod-ath11k-ahb \
+	autocore-arm \
+	kmod-gpio-button-hotplug \
+	kmod-leds-gpio \
+	kmod-qca-nss-dp \
+	kmod-qca-nss-drv \
+	kmod-qca-nss-drv-bridge-mgr \
+	kmod-qca-nss-drv-pppoe \
+	kmod-qca-nss-ecm \
+	kmod-qca-ssdk \
+	luci-app-cpufreq \
+	nss-firmware-ipq6018 \
+	qca-ssdk-shell \
+	swconfig \
+	uboot-envtools \
+	wpad-openssl
 
 $(eval $(call BuildTarget))
