@@ -16,6 +16,7 @@ include $(INCLUDE_DIR)/target.mk
 DEFAULT_PACKAGES += \
 	ath11k-firmware-ipq6018 \
 	kmod-ath11k-ahb \
+	kmod-ath11k-pci \
 	autocore-arm \
 	kmod-gpio-button-hotplug \
 	kmod-leds-gpio \

@@ -28,7 +28,8 @@ ALLWIFIBOARDS:= \
 	gl-ax1800 \
 	gl-axt1800 \
 	cmiot_ax18 \
-	qihoo_v6
+	qihoo_v6 \
+	mr7350
 
 ALLWIFIPACKAGES:=$(foreach BOARD,$(ALLWIFIBOARDS),ath11k-wifi-$(BOARD))
 
@@ -89,6 +90,6 @@ $(eval $(call generate-ath11k-wifi-package,gl-ax1800,Gl.iNET AX1800))
 $(eval $(call generate-ath11k-wifi-package,gl-axt1800,Gl.iNET AXT1800))
 $(eval $(call generate-ath11k-wifi-package,cmiot_ax18,CMIOT_AX18))
 $(eval $(call generate-ath11k-wifi-package,qihoo_v6,QIHOO V6))
-
+$(eval $(call generate-ath11k-wifi-package,mr7350,Linksys MR7350))
 
 $(foreach PACKAGE,$(ALLWIFIPACKAGES),$(eval $(call BuildPackage,$(PACKAGE))))

@@ -94,7 +94,7 @@ define Device/linksys_mr7350
 		append-ubi | linksys-image type=MR7350
 	DEVICE_TITLE := Linksys MR7350
 	DEVICE_DTS := qcom-ipq6018-mr7350
-	DEVICE_PACKAGES := kmod-leds-pca963x kmod-usb3 \
+	DEVICE_PACKAGES := ath11k-wifi-mr7350 kmod-leds-pca963x kmod-usb3 \
 		kmod-usb-ledtrig-usbport kmod-usb-phy-msm
 endef
 TARGET_DEVICES += linksys_mr7350
