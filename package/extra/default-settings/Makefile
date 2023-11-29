@@ -49,6 +49,7 @@ define Package/default-settings-chn/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
 	po2lmo ./i18n/default.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/default.zh-cn.lmo
 	po2lmo ./i18n/more.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/more.zh-cn.lmo
+	po2lmo ./i18n/acme.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/acme.zh-cn.lmo
 endef
 
 $(eval $(call BuildPackage,default-settings))
