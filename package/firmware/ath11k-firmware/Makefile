@@ -8,6 +8,9 @@ PKG_MAINTAINER:=John Crispin <john@phrozen.org>
 
 include $(INCLUDE_DIR)/package.mk
 
+OLD_RSTRIP := $(RSTRIP)
+RSTRIP:=:
+
 define Package/ath11k-firmware-default
   SECTION:=firmware
   CATEGORY:=Firmware
@@ -41,3 +44,5 @@ define Package/ath11k-firmware-ipq6018/install
 endef
 
 $(eval $(call BuildPackage,ath11k-firmware-ipq6018))
+
+RSTRIP:= $(OLD_RSTRIP)
