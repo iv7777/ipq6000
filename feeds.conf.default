@@ -2,5 +2,5 @@ src-git packages https://github.com/iv7777/packages-sdf8057.git;2023
 src-git luci https://github.com/sdf8057/luci.git;2023
 src-git routing https://github.com/openwrt/routing.git;openwrt-21.02
 src-git telephony https://github.com/openwrt/telephony.git;openwrt-21.02
-src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git^e466b5ed61f0afb8943de2bca87a99d45b4e87da
+src-git passwall https://github.com/xiaorouji/openwrt-passwall.git^3509adca3279fb26e2e398faffc2c848d6f39c00
